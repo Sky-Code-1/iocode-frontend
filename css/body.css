@@ -314,6 +314,18 @@ button{
     display: flex;
     align-items: center;
 }
+.name{
+    display: inline-block;
+    font-size: var(--font-size-medium);
+    color: var(--light-blue-bg);
+}
+.links{
+    display: inline-block;
+    padding: 2rem;
+}
+.links i{
+    width: 3rem;
+}
 /** Utility Classes */
 .py-none{
     padding: 0;
