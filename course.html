@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="Programming Course">
+		<meta name="description" content="Tutorial">
+		<meta name="description" content="Programming Language">
+		<meta name="description" content="Programming Language Quiz">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+		<link rel="stylesheet" href="css/header.css">
+		<link rel="stylesheet" href="css/body.css">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300&display=swap" rel="stylesheet">
+		<title>iocode | Course Page</title>
+	</head>
+	<body>
+		<header>
+			<script>
+				// Use Fetch API to fetch the header.html content
+				fetch('header.html')
+					.then(response => response.text())
+					.then(data => {
+						// Insert the header content into the body or any other element
+						document.body.insertAdjacentHTML('afterbegin', data);
+					})
+					.catch(error => {
+						console.error('Error fetching header:', error);
+					});
+			</script>
+		</header>
+		
+		<main>
+			<section class="intro" id="intro">
+				<div class="intro-div">
+					<h1><span class="primary">Available</span> Courses</h1>
+					<p class="intro-p mg-none">
+						All available courses are free, just for you. Start your 
+						learning journey today.
+					</p>
+					<button class="join-btn mg-none mg-top">Start Learning</button>
+				</div>
+				<div class="img-container">
+					<img src="img/image-1.jpg" alt="Learning-image" class="learning-img">
+				</div>
+			</section>
+			<div class="py-top">
+				<h2 class="category medium-width mg-auto">Framework</h2>
+			</div>
+			<section class="category-section">
+				<div class="category-wrap">
+					<div class="course-category">
+						<div>
+							<img src="img/image-2.jpg" alt="Framework-One" class="learning-img">
+							<p class="course-name">Complete Springboot Course</p>
+							<button class="join-btn mg-none">Start Learning</button>
+						</div>
+					</div>
+			</section>
+			<section class="intro why-section">
+				<div class="why-div">
+					<h2 class="why-h2">Coming Soon</h2>
+					<div class="why-div-container">
+						<div class="intro-div">
+							<p class="intro-p mg-none">
+								Due to the continous evolution in the field of programming we
+								make sure that we have series of course on our pipeline soon to be released.
+								we achieve this 
+								by updating previous courses and also adding new ones to our previous list
+								of courses
+							</p>
+							<button class="join-btn mg-none  mg-top">See All</button>
+						</div>
+						<div>
+							<img src="img/image-2.jpg" alt="Framework-One" class="learning-img round-radius -mg-top">
+						</div>
+					</div>					
+				</div>
+			</section>
+		</main>
+		<footer id="footer" class="py-top">
+			<script>
+				// Use Fetch API to fetch the header.html content
+				function fetchFooter(){fetch('footer.html')
+					.then(response => response.text())
+					.then(data => {
+						// Insert the header content into the body or any other element
+						document.getElementById('footer').insertAdjacentHTML('afterbegin', data);
+					})
+					.catch(error => {
+						console.error('Error fetching header:', error);
+					});
+				}
+					window.addEventListener('load', fetchFooter);
+			</script>
+		</footer>
+	</body>
+</html>

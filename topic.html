@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="Programming Course">
+		<meta name="description" content="Tutorial">
+		<meta name="description" content="Programming Language">
+		<meta name="description" content="Programming Language Quiz">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+		<link rel="stylesheet" href="css/header.css">
+		<link rel="stylesheet" href="css/body.css">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300&display=swap" rel="stylesheet">
+		<title>iocode | Start Post Page</title>
+	</head>
+	</script>
+	<body>
+		<header>
+			<script>
+				// Use Fetch API to fetch the header.html content
+				fetch('header.html')
+					.then(response => response.text())
+					.then(data => {
+						// Insert the header content into the body or any other element
+						document.body.insertAdjacentHTML('afterbegin', data);
+					})
+					.catch(error => {
+						console.error('Error fetching header:', error);
+					});
+			</script>
+		</header>
+		<main>
+			<section id="topic-details-section">
+				<section class="intro" id="intro">
+					<div class="intro-div">
+						<h1>
+							Getting Started.
+						</h1>
+						<button class="join-btn mg-none">Start Learning</button>
+					</div>
+					<div class="img-container">
+						<img src="img/image-1.jpg" alt="Learning-image" class="learning-img">
+					</div>
+				</section>
+				<section class="post-name-section">
+					<h2 class="post-name">Getting Started</h2>
+				</section>
+				<section class="post-details-section">
+					<nav class="content-nav">
+						<p class="py-top content">Contents</p>
+						<ul class="topic-list">
+							<li><a href="home.html" class="topic-links">Introduction</a></li>
+							<li><a href="#" class="topic-links">Topic 2</a></li>
+							<li><a href="#" class="topic-links">Topic 3</a></li>
+							<li><a href="#" class="topic-links">Topic 4</a></li>
+							<li><a href="#" class="topic-links">Topic 5</a></li>
+						</ul>
+					</nav>
+					<div class="post-details-div mg-auto">
+						<p class="heading-p">Introduction</p>
+						<p class="introduction mg-bottom">
+							Programming is an act of giving instructions to the computer 
+							and this acts has seen significant growth since it first interception
+							from the use of machine level language to low level languages all 
+							the way to higher level language.
+						</p>
+						<p>
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis sapiente laboriosam laborum at. Dolores maiores laudantium ab sapiente corrupti, blanditiis molestiae quisquam ratione suscipit inventore adipisci optio. Animi laboriosam rem nemo hic obcaecati, temporibus vel, dolor eius et ab nulla incidunt asperiores iusto quasi qui officia vitae a modi! Illum expedita repellat quo amet, iusto cumque accusantium officia magnam, cupiditate dolorum ullam, libero sunt tempora fugiat hic beatae ipsa vitae repellendus earum modi. Reiciendis iusto distinctio, quisquam laborum et itaque, nulla corrupti temporibus pariatur commodi, non atque. Distinctio accusamus tempore qui eveniet saepe cum, quibusdam quisquam cumque dolore magni amet.
+						</p>
+						<div>
+							<a class="join-btn mg-none py-top" href="#"><i class="fas fa-chevron-left 3x"></i> Previous Topic</a>
+							<a class="join-btn mg-none py-top" href="#"> Next Topic <i class="fas fa-chevron-right 3x"></i></a>
+						</div>
+						<div class="mg-top">
+							<p>Test your level of understanding click on the button below to take the quiz related to this topic</p>
+							<button class="join-btn mg-none mg-top" onclick="onTakeQuiz()">Take Quiz</button>
+						</div>
+					</div>
+				</section>
+			</section>
+			<section class="quiz js-quiz none" id="quiz-section">
+				<button class="close-quiz-btn join-btn" onclick="closeQuiz()"><span class="fas fa-times show" style="font-size: 20px;"></span></button>
+				<div class="start end-quiz content-box question-box" id="start-div">
+					<i class="fas fa-puzzle-piece fa-6x icon mg-left"></i>
+					<p>
+						You will be given a couple of questions to answer in five minutes
+						the quiz is given mainly to test your ability and your level of understanding
+						in this particular topic
+					</p>
+					<button class="join-btn" onclick="startQuiz()">Start Quiz</button>
+				</div>
+				
+				<div id="quiz-body" class="content-box none">
+					<div>
+						<ul class="question-head">
+							<li id="question-number">Question #1</li>
+							<li class="time">Time Left <span id="timer"> &nbsp; 04:00</span></li>
+						</ul>
+					</div>
+					<div class="question quiz-question">
+						What is would be printed out in the console? when the program
+						below is executed.
+						<br>
+						<br>
+						<div class="code">
+							<code>
+								public class Hello{<br>
+								&nbsp;&nbsp;&nbsp;&nbsp;public static void main(String... args){<br>
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println("Welcome To The Introduction") <br>
+								&nbsp;&nbsp;&nbsp;&nbsp;} <br>
+								}	<br>
+							</code>
+						</div>
+					</div>
+					<div class="answer">
+						<p>Select one correct answer from the following</p>
+						<ul>
+							<li><input type="radio" name="answer" id="optiona" onclick="onUserSelection('optiona')">
+								<label
+									for="optiona" id="labela"> Option A
+								</label>
+							</li>
+							<li><input type="radio" name="answer" id="optionb" onclick="onUserSelection('optionb')">
+								<label
+									for="optionb" id="labelb">  Option B
+								</label>
+							</li>
+							<li><input type="radio" name="answer" id="optionc" onclick="onUserSelection('optionc')">
+								<label
+									for="optionc" id="labelc"> Option C
+								</label>
+							</li>
+							<li><input type="radio" name="answer" id="optiond" onclick="onUserSelection('optiond')">
+								<label
+									for="optiond" id="labeld">  Option D
+								</label>
+							</li>
+						</ul>
+					</div>
+					<div>
+						<button onclick="previousQuestion()" class="join-btn"><i class="fas fa-chevron-left 3x"></i> Previous Question</button>
+						<button onclick="nextQuestion()" class="join-btn"> Next Question <i class="fas fa-chevron-right 3x"></i></button>
+					</div>
+          <script th:inline="javascript">
+          var questions = /*[[${topic.questions}]]*/
+          console.log(questions);
+          if(questions === undefined){
+            questions = [{
+                body: 'What is an IDE?',
+                optionA: 'Integrated Development Environment',
+                optionB: 'Integrated Developer Environment',
+                optionC: 'International Developer Environment',
+                optionD: 'International Development Environment',
+                answer: 'Integrated Development Environment'
+            }];
+            console.log('Assigning alternative questions different from the ones in the database');
+            }
+          else
+            console.log(`Not printing out again`);
+        </script>
+        <script src="js/quiz.js" th:src="@{/js/quiz.js}"></script>
+        <script>showFirst()</script>
+        </div>
+			</section>
+		</main>
+		<footer id="footer">
+			<script>
+				// Use Fetch API to fetch the header.html content
+				function fetchFooter(){fetch('footer.html')
+					.then(response => response.text())
+					.then(data => {
+						// Insert the header content into the body or any other element
+						document.getElementById('footer').insertAdjacentHTML('afterbegin', data);
+					})
+					.catch(error => {
+						console.error('Error fetching header:', error);
+					});
+				}
+					window.addEventListener('load', fetchFooter);
+			</script>
+		</footer>
+	</body>
+</html>

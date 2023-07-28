@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="Programming Course">
+		<meta name="description" content="Tutorial">
+		<meta name="description" content="Programming Language">
+		<meta name="description" content="Programming Language Quiz">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+		<link rel="stylesheet" href="css/header.css">
+		<link rel="stylesheet" href="css/body.css">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300&display=swap" rel="stylesheet">
+		<title>iocode | Course Page</title>
+	</head>
+	<body>
+		<header>
+			<script>
+				// Use Fetch API to fetch the header.html content
+				fetch('header.html')
+					.then(response => response.text())
+					.then(data => {
+						// Insert the header content into the body or any other element
+						document.body.insertAdjacentHTML('afterbegin', data);
+					})
+					.catch(error => {
+						console.error('Error fetching header:', error);
+					});
+			</script>
+		</header>
+		
+		<main>
+			<section class="intro" id="intro">
+				<div class="intro-div">
+					<h1><span class="primary">Our</span> Response</h1>
+					<p class="intro-p mg-none">
+						We are swift when it comes to responding to 
+						request from both clients and students. because 
+						you are at the top of our priority lists send a 
+						mail to us today and get a reply A.S.A.P!
+					</p>
+					<button class="join-btn mg-none mg-top">Send Mail</button>
+				</div>
+				<div class="img-container">
+					<img src="img/image-1.jpg" alt="Learning-image" class="learning-img">
+				</div>
+			</section>
+			<div class="py-top">
+			</div>
+			<section>
+				<div class="contact-section" id="contact">
+					<div class="contact-div full-padding">
+						<h1 class="padding"><span>Contact</span> Team</h1>
+						<p class="padding">Please use the form below to contact us</p>
+	
+						<form class="form-padding" action="#">
+							<div>
+								<label for="name">Name</label>
+								<input type="text" name="name" id="name" onfocus="changeBorderColor(true, 'name')"  placeholder="Kelvin Smith">
+							</div>
+							<div>
+								<label for="email">Email</label>
+								<input type="email" name="email" id="email" placeholder="Kelvin@iocode.net">
+							</div>
+							<div>
+								<label for="tel">Phone</label>
+								<input type="number" name="tel" id="tel" placeholder="+555-25316...">
+							</div>
+							<div>
+								<label for="message">Message</label>
+								<textarea name="message" id="message" cols="30" rows="10"></textarea>
+							</div><a class="join-btn mg-none mg-top"  href="#">Send</a>
+						</form>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer id="footer" class="py-top">
+			<script>
+				// Use Fetch API to fetch the header.html content
+				function fetchFooter(){fetch('footer.html')
+					.then(response => response.text())
+					.then(data => {
+						// Insert the header content into the body or any other element
+						document.getElementById('footer').insertAdjacentHTML('afterbegin', data);
+					})
+					.catch(error => {
+						console.error('Error fetching header:', error);
+					});
+				}
+					window.addEventListener('load', fetchFooter);
+			</script>
+		</footer>
+	</body>
+</html>
