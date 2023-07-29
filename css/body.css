@@ -301,8 +301,8 @@ button{
     margin: auto;
 }
 .member-image{
-    width: 150px;
-    height: 250px;
+    width: 200px !important;
+    height: 200px !important;
 }
 .member-details{
     margin-left: 1rem;
@@ -321,10 +321,11 @@ button{
 }
 .links{
     display: inline-block;
-    padding: 2rem;
+    padding: 1rem;
 }
-.links i{
-    width: 3rem;
+.i{
+    font-size: 25px;
+    width: 2rem;
 }
 /** Utility Classes */
 .py-none{
