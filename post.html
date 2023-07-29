@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="Programming Course">
+		<meta name="description" content="Tutorial">
+		<meta name="description" content="Programming Language">
+		<meta name="description" content="Programming Language Quiz">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+		<link rel="stylesheet" href="css/header.css">
+		<link rel="stylesheet" href="css/body.css">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300&display=swap" rel="stylesheet">
+		<title>iocode | Start Post Page</title>
+	</head>
+	<body>
+		<header>
+			<script>
+				// Use Fetch API to fetch the header.html content
+				fetch('header.html')
+					.then(response => response.text())
+					.then(data => {
+						// Insert the header content into the body or any other element
+						document.body.insertAdjacentHTML('afterbegin', data);
+					})
+					.catch(error => {
+						console.error('Error fetching header:', error);
+					});
+			</script>
+		</header>
+		<main>
+			<section class="intro" id="intro">
+				<div class="intro-div">
+					<h1>
+						An Introduction To Programming Using The Java Programming Language
+					</h1>
+					<button class="join-btn mg-none">Start Learning</button>
+				</div>
+				<div class="img-container">
+					<img src="img/image-1.jpg" alt="Learning-image" class="learning-img">
+				</div>
+			</section>
+			<section class="post-name-section">
+				<h2 class="post-name">An Introduction To Programming Using Java</h2>
+			</section>
+			<section class="post-details-section">
+				<nav class="content-nav">
+					<p class="py-top content">Contents</p>
+					<ul class="topic-list">
+						<li><a href="home.html" class="topic-links">Introduction</a></li>
+						<li><a href="#" class="topic-links">Topic 2</a></li>
+						<li><a href="#" class="topic-links">Topic 3</a></li>
+						<li><a href="#" class="topic-links">Topic 4</a></li>
+						<li><a href="#" class="topic-links">Topic 5</a></li>
+					</ul>
+				</nav>
+				<div class="post-details-div mg-auto">
+					<p class="heading-p">Introduction</p>
+					<p class="introduction mg-bottom">
+						Welcome to "An Introduction to Programming Using Java"! 
+						This comprehensive course is designed for individuals 
+						who are new to programming and wish to learn the fundamentals 
+						of Java, one of the most popular and versatile programming 
+						languages in the world.
+					</p>
+					<p class="heading-p">Course Details</p>
+					<ul class="details mg-bottom">
+						<li>
+							Duration: The course runs through a period of 4weeks
+							starting from 14th August, 2023 to 14 September, 2023.
+						</li>
+						<li>
+							Instructor: Isaiah Osarobo (An Expert at Demystifying Object Oriented concept).
+						</li>
+						<li>
+							Prerequisites: This course covers everything it takes to move from a beginner level to an intermediate programmer
+						</li>
+						<li>Course Level: Beginner</li>
+					</ul>
+					<p class="heading-p">Modules</p>
+					<ul>
+						<li>Getting Started With Java</li>
+						<li>Variables And Data Types</li>
+						<li>Control Flow Statements</li>
+						<li>Introduction To Data Structures With Arrays</li>
+						<li>Object Oriented Concepts</li>
+						<li>Final Project and Closing Remarks</li>
+					</ul>
+					<button class="join-btn mg-none mg-top">Start Learning</button>
+				</div>
+			</section>
+		</main>
+		<footer id="footer">
+			<script>
+				// Use Fetch API to fetch the header.html content
+				function fetchFooter(){fetch('footer.html')
+					.then(response => response.text())
+					.then(data => {
+						// Insert the header content into the body or any other element
+						document.getElementById('footer').insertAdjacentHTML('afterbegin', data);
+					})
+					.catch(error => {
+						console.error('Error fetching header:', error);
+					});
+				}
+					window.addEventListener('load', fetchFooter);
+			</script>
+		</footer>
+	</body>
+</html>
