@@ -13,7 +13,7 @@
         color: var(--light-blue-bg);
     }
     .normal-search-div{
-        margin-top: 4rem;
+        margin: 0.75rem 0rem;
         display: flex;
     }
     .search-bar-container{
