@@ -18,6 +18,13 @@ body{
     font-style: normal;
     margin-top: 2rem;
 }
+header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 4;
+}
 a{
     text-decoration: none;
 }
@@ -41,13 +48,6 @@ button{
 }
 .primary{
     color: #f4f4f4;
-}
-header{
-    position: fixed;
-    width: 100%;
-    top: 0;
-    left: 0;
-    z-index: 4;
 }
 #const-header div,
 #const-header div ul{
@@ -109,4 +109,11 @@ a:visited{
 }
 .join-btn:hover{
     background-color: var(--dark-blue-bg);
+}
+.icons-ul i{
+    display: none;
+}
+/* Utility class */
+.none{
+    display: none;
 }

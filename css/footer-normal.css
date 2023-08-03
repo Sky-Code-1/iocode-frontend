@@ -1,0 +1,42 @@
+footer{
+    font-size: 14px;
+    padding: 1rem 0.2rem;
+}
+
+@media(max-width: 500px){
+    footer{
+        font-size: 12px;
+        padding: 2rem 0.2rem;
+    }
+}
+@media(max-width: 325px){
+    footer{
+        font-size: 8px;
+        padding: 1rem 0.2rem;
+    }
+}
+@media(max-width: 400px){
+    footer{
+        font-size: 10px;
+        padding: 1rem 0.2rem;
+    }
+}
+.connect{
+    display: none;
+}
+.connect-normal{
+    margin-bottom: 1rem;
+}
+.connect-normal div{
+    display: flex;
+    width: 100px;
+    justify-content: space-between;
+    border-bottom: 2px solid var(--light-blue-bg);
+}
+.connect-normal > p{
+    font-weight: bold;
+    margin: 0.5rem 0rem;
+}
+.connect-normal i{
+    font-size: 1rem;
+}

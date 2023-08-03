@@ -1,15 +1,13 @@
 footer{
-    margin-top: 2rem;
-    padding-bottom: 2rem;
     border-top: 1px solid var(--light-bg);
     display: flex;
     flex-direction: column;
+    padding: 2rem;
 }
 .footer-container{
     width: 100%;
     display: flex;
     justify-content: space-around;
-    padding: 2rem;
     max-width: var(--medium-width);
     margin: auto;
 }
@@ -23,11 +21,11 @@ footer{
 }
 .connect i{
     color: var(--dark-blue-bg);
-    font-size: 1.5rem;
+    font-size: 1rem;
 }
 .connect div{
     display: flex;
-    width: 150px;
+    width: 100px;
     justify-content: space-between;
     border-bottom: 2px solid var(--light-blue-bg);
 }
@@ -35,4 +33,9 @@ footer{
     width: 100%;
     display: flex;
     justify-content: center;
+}
+@media(min-width: 800px) {
+    .connect-normal, .connect-normal div{
+        display: none;
+    }
 }

@@ -4,6 +4,7 @@
 		<meta charset="UTF-8">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
 		<link rel="stylesheet" href="css/header.css">
+		<link rel="stylesheet" media="screen and (max-width: 900px)" href="css/header-normal.css">
 	</head>
 	<body>
 		<header>
@@ -13,16 +14,34 @@
 					<label for="search-bar"><i class="fas fa-search 5x"></i></label>
 					<input type="search" name="search-bar" id="search-bar" placeholder="Search in Iocode Learn">
 				</div>
-				<div>
-					<ul>
+				<div class="link-div">
+					<ul class="links-ul">
 						<li><a href="index.html">Home</a></li>
 						<li><a href="course.html">Course</a></li>
 						<li><a href="about.html">About</a></li>
 						<li><a href="contact.html">Contact</a></li>
 					</ul>
+					<ul class="icons-ul">
+						<li><a href="index.html"><i class="fas fa-home"></i></a></li>
+						<li><a href="course.html"><i class="fas fa-info-circle"></i></a></li>
+						<li><a href="about.html"><i class="fas fa-graduation-cap"></i></a></li>
+						<li><a href="contact.html"><i class="fas fa-envelope"></i></a></li>
+					</ul>
 					<button class="join-btn">Join Our Community</button>
 				</div>
 			</div>
+
+			<div class="links-icon-div">
+				
+			</div>
 		</header>
+		<div class="normal-search-div">
+			<div  id="search-bar-container" class="search-bar-container">
+				<label for="search-bar"><i class="fas fa-search 5x"></i></label>
+				<button class="search-btn">Search</button>
+				<input type="search" name="search-bar" id="search-bar" class="none" placeholder="Search in Iocode Learn">
+			</div>
+			<button class="join-btn">Join Our Community</button>
+		</div>
 	</body>
 </html>
