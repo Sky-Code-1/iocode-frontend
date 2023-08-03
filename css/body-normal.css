@@ -23,16 +23,18 @@
     display: none;
 }
 .category-section{
-    margin: 0;
+    margin: 0rem !important;
 }
 .category-wrap{
+    width: 100%;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 0rem !important;
+    margin: 0rem;
 }
 .course-category{
-    width: 80%;
+    width: 100%;
     padding: 0rem !important;
     margin: 1rem 0rem !important;
 }

@@ -49,7 +49,7 @@ button{
 .intro-div,
 .why-h2{
     margin: 1rem 2rem;
-    width: 400px;
+    max-width: 400px;
     color: var(--text-color-light-gray);
 }
 .why-h2{
