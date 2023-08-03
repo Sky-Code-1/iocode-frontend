@@ -23,7 +23,7 @@
     display: none;
 }
 .category-section{
-    
+    margin: 0;
 }
 .category-wrap{
     flex-direction: column;
