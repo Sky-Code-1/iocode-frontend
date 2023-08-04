@@ -34,9 +34,13 @@
     margin: 0rem;
 }
 .course-category{
-    width: 100%;
+    width: 80%;
+    font-size: 0.8rem;
     padding: 0rem !important;
     margin: 1rem 0rem !important;
+}
+.course-category div{
+    padding-bottom: 0.5rem;
 }
 .box-container{
     padding: 0rem;
