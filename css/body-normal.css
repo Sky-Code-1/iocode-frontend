@@ -1,6 +1,15 @@
-*{
-    padding: 0rem;
-    margin: 0rem;
+
+.why-div{
+    max-width: 100vw;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+}
+.why-div-container{
+    margin: auto;
+}
+.intro-div-2{
+    margin: auto;
 }
 .intro{
     padding: 0rem !important;
@@ -50,4 +59,23 @@
 }
 .box h2{
     text-align: center;
+}
+.intro-div h1{
+    text-align: center;
+    margin-top: 1rem;
+}
+.learning-img-container{
+    display: none;
+}
+.py-top h2{
+    margin-left: 0.5rem;
+}
+.join-btn{
+    font-size: 12px;
+}
+.what-div, .contact-div{
+    padding: 0.5rem;
+}
+.position{
+    text-align: left;
 }

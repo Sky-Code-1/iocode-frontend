@@ -161,12 +161,14 @@ button{
     align-content: center;
 }
 .why-div{
-    width: 100%;
+    width: 100vw;
     display: flex;
     flex-direction: column;
+    
 }
 .why-div > div{
     display: flex;
+    width: 100%;
 }
 .why-div > div > div{
     width: 300px;
