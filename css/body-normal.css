@@ -21,6 +21,7 @@
 }
 .intro div{
     flex: 1;
+    margin: 0.5rem;
 }
 .intro-p{
     max-width: 100%;
@@ -62,17 +63,22 @@
 }
 .intro-div h1{
     text-align: center;
-    margin-top: 1rem;
+    margin-top: 0.75rem;
+    margin-bottom: 0.75rem;
 }
 .learning-img-container{
     display: none;
 }
+.mg-top-half{
+    margin-top: 0rem !important;
+}
 .py-top h2{
     margin-left: 0.5rem;
 }
-.join-btn{
+/* .join-btn{
     font-size: 12px;
-}
+    margin-top: 0.5rem !important;
+} */
 .what-div, .contact-div{
     padding: 0.5rem;
 }
