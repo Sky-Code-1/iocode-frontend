@@ -75,13 +75,36 @@
 .py-top h2{
     margin-left: 0.5rem;
 }
-/* .join-btn{
+.join-btn{
     font-size: 12px;
-    margin-top: 0.5rem !important;
-} */
+    padding: 5px !important;
+}
 .what-div, .contact-div{
     padding: 0.5rem;
 }
 .position{
     text-align: left;
+}
+.content-nav{
+    display: none;
+}
+.post-details-div{
+    margin: 0;
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 14px;
+    text-align: left;
+}
+.btn-div{
+    display: flex;
+    justify-content: space-between;
+
+}
+.btn-div i{
+    color: var(--light-bg);
+    font-size: 14px;
+}
+.post-name{
+    text-align: left;
+    font-size: 18px;
 }
